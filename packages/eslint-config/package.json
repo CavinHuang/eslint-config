@@ -1,6 +1,6 @@
 {
   "name": "@cavin-huang/eslint-config",
-  "version": "0.0.2-beta.0",
+  "version": "0.0.2",
   "description": "cavinHuang's ESLint config",
   "license": "MIT",
   "homepage": "https://github.com/cavinHuang/eslint-config",
