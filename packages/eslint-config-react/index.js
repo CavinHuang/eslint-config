@@ -1,19 +1,16 @@
 module.exports = {
   extends: [
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    '@antfu/eslint-config-ts',
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "@cavin-huang/eslint-config-ts",
   ],
   settings: {
     react: {
-      version: '17.0',
+      version: "17.0",
     },
   },
   rules: {
-    'jsx-quotes': [
-      'error',
-      'prefer-double',
-    ],
-    'react/react-in-jsx-scope': 'off',
+    "jsx-quotes": ["error", "prefer-double"],
+    "react/react-in-jsx-scope": "off",
   },
-}
+};
