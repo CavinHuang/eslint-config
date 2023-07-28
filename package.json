@@ -1,6 +1,6 @@
 {
   "name": "@cavin-huang/eslint-config-monorepo",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": true,
   "packageManager": "pnpm@8.6.7",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "test": "pnpm -r run test",
     "build": "pnpm -r run build",
     "prepare": "pnpm -r run stub",
-    "release": "bumpp -r && pnpm -r publish"
+    "release": "bumpp -r && pnpm -r publish --access public"
   },
   "devDependencies": {
     "@cavin-huang/eslint-config": "workspace:*",
