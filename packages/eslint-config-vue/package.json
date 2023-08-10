@@ -13,6 +13,10 @@
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
   "dependencies": {
     "@cavin-huang/eslint-config-basic": "workspace:*",
     "@cavin-huang/eslint-config-ts": "workspace:*",

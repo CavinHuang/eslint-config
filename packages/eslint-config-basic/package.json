@@ -17,6 +17,10 @@
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
   "dependencies": {
     "eslint-plugin-cavin-huang": "workspace:*",
     "eslint-plugin-eslint-comments": "^3.2.0",

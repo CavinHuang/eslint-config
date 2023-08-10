@@ -9,6 +9,10 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
   "scripts": {
     "build": "rimraf dist && unbuild",
     "stub": "unbuild --stub",
