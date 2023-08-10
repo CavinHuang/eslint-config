@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-cavin-huang",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "license": "MIT",
   "homepage": "https://github.com/cavinHuang/eslint-config",
   "main": "./dist/index.cjs",
