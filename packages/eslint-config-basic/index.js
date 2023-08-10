@@ -283,10 +283,10 @@ module.exports = {
     'import/no-duplicates': 'error',
 
     // Common
-    semi: ['error', 'always'],
+    semi: ['error', 'never'],
     curly: ['error', 'multi-or-nest', 'consistent'],
     quotes: ['error', 'single'],
-    'quote-props': ['error', 'consistent-as-needed'],
+    'quote-props': ['error', 'as-needed'],
 
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': [
