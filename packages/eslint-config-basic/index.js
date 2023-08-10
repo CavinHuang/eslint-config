@@ -50,6 +50,7 @@ module.exports = {
     "unicorn",
     "cavin-huang",
     "no-only-tests",
+    "simple-import-sort",
     "unused-imports",
   ],
   settings: {
@@ -227,10 +228,30 @@ module.exports = {
     "import/no-self-import": "error",
 
     // Common
-    semi: ["error", "never"],
+    semi: ["error", "always"],
     curly: ["error", "multi-or-nest", "consistent"],
     quotes: ["error", "single"],
     "quote-props": ["error", "consistent-as-needed"],
+
+    "simple-import-sort/imports": [
+      "error",
+      {
+        groups: [
+          ["^\\u0000"],
+          [
+            "^(assert|buffer|child_process|cluster|console|constants|crypto|dgram|dns|domain|events|fs|http|https|module|net|os|path|punycode|querystring|readline|repl|stream|string_decoder|sys|timers|tls|tty|url|util|vm|zlib|freelist|v8|process|async_hooks|http2|perf_hooks)(/.*|$)",
+            "^node:",
+          ],
+          ["^vue"],
+          ["^react"],
+          ["^@?\\w"],
+          ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+          ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+          ["^.+\\.svg$"],
+          ["^.+\\.s?css$"],
+        ],
+      },
+    ],
 
     "unused-imports/no-unused-imports": "error",
     "unused-imports/no-unused-vars": [
